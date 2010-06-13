@@ -7,6 +7,7 @@
 #include "cgicc/HTTPHTMLHeader.h"
 #include "cgicc/HTMLClasses.h"
 #include "./db_connection/DBconnector.h"
+#include "./utility/Punct_stream.h"
 //#include "./utility/General.h"
 
 
@@ -35,11 +36,17 @@ int main(int argc, char **argv)
 
   string pathInfo = env.getPathInfo();
   string primary("");
-  parse_path_info(pathInfo);
+  string secondary("");
+  //parse_path_info(pathInfo);
+  Punct_stream ps(pathInfo);
   stringstream ss(pathInfo);
-  
-  ss>>primary;
-  cout<<primary<< endl;
+  ps.whitespace("/");
+  ps>>primary;
+  ps>>secondary;
+  //ss>>primary;
+  //ss>>secondary;
+  cout<<"p:"<<primary<< endl;
+  cout<<"s:"<<secondary<< endl;
 
   if (env.getRequestMethod() == POST_METHOD){
     cout << "POST";

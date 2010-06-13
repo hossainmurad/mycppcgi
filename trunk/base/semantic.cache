@@ -9,6 +9,12 @@
     :pointmax 269
     :unmatched-syntax 'nil
     )
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags '(("iostream" include (:system-flag t) nil [1 20]) ("getpost.h" include nil nil [21 41]) ("string" include (:system-flag t) nil [42 59]) ("map" include (:system-flag t) nil [60 74]) ("istream" include (:system-flag t) nil [75 93]) ("cgicc/Cgicc.h" include nil nil [94 118]) ("cgicc/HTTPHTMLHeader.h" include nil nil [119 152]) ("cgicc/HTMLClasses.h" include nil nil [153 183]) ("./db_connection/DBconnector.h" include nil nil [184 224]) ("parse_path_info" function (:prototype-flag t :arguments (("s" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [327 337])) :type "void") nil [306 338]) ("POST_METHOD" variable (:constant-flag t) nil [348 385]) ("GET_METHOD" variable (:constant-flag t) nil [375 396]) ("main" function (:arguments (("argc" variable (:type "int") (reparse-symbol arg-sub-list) [402 411]) ("argv" variable (:pointer 2 :type "char") (reparse-symbol arg-sub-list) [412 424])) :type "int") nil [393 1224]) ("parse_path_info" function (:arguments (("s" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1248 1258])) :type "void") nil [1227 1367]))
+    :file "main.cpp"
+    :pointmax 1368
+    )
    )
   :file "semantic.cache"
   :semantic-tag-version "2.0pre4"
