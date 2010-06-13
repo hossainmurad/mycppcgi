@@ -1,0 +1,15 @@
+;; Object examples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "examples/"
+  :tables (list 
+   (semanticdb-table "connect.cpp"
+    :major-mode 'c++-mode
+    :tags '(("stdlib.h" include (:system-flag t) nil [561 580]) ("iostream" include (:system-flag t) nil [581 600]) ("sstream" include (:system-flag t) nil [601 619]) ("stdexcept" include (:system-flag t) nil [620 640]) ("./driver/mysql_driver.h" include nil nil [923 957]) ("./driver/mysql_util.h" include nil nil [958 990]) ("examples.h" include nil nil [1034 1055]) ("main" function (:arguments (("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1165 1174]) ("argv" variable (:pointer 2 :constant-flag t :type "char") (reparse-symbol arg-sub-list) [1175 1193])) :type "int") nil [1156 7862]))
+    :file "connect.cpp"
+    :pointmax 7863
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )

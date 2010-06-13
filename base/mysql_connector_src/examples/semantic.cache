@@ -1,0 +1,22 @@
+;; Object examples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "examples/"
+  :tables (list 
+   (semanticdb-table "standalone_example.cpp"
+    :major-mode 'c++-mode
+    :tags '(("stdlib.h" include (:system-flag t) nil [1083 1102]) ("iostream" include (:system-flag t) nil [1103 1122]) ("sstream" include (:system-flag t) nil [1123 1141]) ("stdexcept" include (:system-flag t) nil [1142 1162]) ("mysql_connection.h" include nil nil [1324 1353]) ("cppconn/driver.h" include (:system-flag t) nil [1355 1382]) ("cppconn/exception.h" include (:system-flag t) nil [1383 1413]) ("cppconn/resultset.h" include (:system-flag t) nil [1414 1444]) ("cppconn/statement.h" include (:system-flag t) nil [1445 1475]) ("EXAMPLE_HOST" variable (:constant-flag t) nil [1485 1530]) ("EXAMPLE_USER" variable (:constant-flag t) nil [1518 1558]) ("EXAMPLE_PASS" variable (:constant-flag t) nil [1546 1594]) ("std" variable (:type "int") nil [1605 1609]) ("main" function (:arguments (("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1697 1706]) ("argv" variable (:pointer 2 :constant-flag t :type "char") (reparse-symbol arg-sub-list) [1707 1725])) :type "int") nil [1688 3504]))
+    :file "standalone_example.cpp"
+    :pointmax 3505
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "connect.cpp"
+    :major-mode 'c++-mode
+    :tags '(("stdlib.h" include (:system-flag t) nil [561 580]) ("iostream" include (:system-flag t) nil [581 600]) ("sstream" include (:system-flag t) nil [601 619]) ("stdexcept" include (:system-flag t) nil [620 640]) ("driver/mysql_public_iface.h" include (:system-flag t) nil [882 920]) ("examples.h" include nil nil [964 985]) ("main" function (:arguments (("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1095 1104]) ("argv" variable (:pointer 2 :constant-flag t :type "char") (reparse-symbol arg-sub-list) [1105 1123])) :type "int") nil [1086 7792]))
+    :file "connect.cpp"
+    :pointmax 7793
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )

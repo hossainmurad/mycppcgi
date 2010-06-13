@@ -1,0 +1,16 @@
+;; Object cgi-bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cgi-bin/"
+  :tables (list 
+   (semanticdb-table "makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags '(("all" function (:arguments ("main.cpp")) nil [25 40]))
+    :file "makefile"
+    :pointmax 258
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )

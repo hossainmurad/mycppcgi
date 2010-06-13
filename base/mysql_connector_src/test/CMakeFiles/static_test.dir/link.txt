@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/static_test.dir/static_test.o  -o static_test -rdynamic -L/usr/lib/mysql ../driver/libmysqlcppconn.so.1.0.5 -lmysqlclient_r -Wl,-rpath,/usr/lib/mysql:/home/zhaocong/Progamming/cgi-bin/mysql_connector_src/driver 

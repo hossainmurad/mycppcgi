@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/example.dir/__/unit_fixture.o CMakeFiles/example.dir/__/main.o CMakeFiles/example.dir/example.o  -o example -rdynamic -L/usr/lib/mysql ../../../driver/libmysqlcppconn.so.1.0.5 -lmysqlclient_r ../../framework/libtest_framework.a -Wl,-rpath,/usr/lib/mysql:/home/zhaocong/Progamming/cgi-bin/mysql_connector_src/driver 

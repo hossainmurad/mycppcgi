@@ -1,0 +1,15 @@
+;; Object mysql_connector_cpp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mysql_connector_cpp/"
+  :tables (list 
+   (semanticdb-table "connect.cpp"
+    :major-mode 'c++-mode
+    :tags '(("stdlib.h" include (:system-flag t) nil [561 580]) ("iostream" include (:system-flag t) nil [581 600]) ("sstream" include (:system-flag t) nil [601 619]) ("stdexcept" include (:system-flag t) nil [620 640]) ("mysql_driver.h" include nil nil [923 948]) ("examples.h" include nil nil [1026 1047]) ("main" function (:arguments (("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1157 1166]) ("argv" variable (:pointer 2 :constant-flag t :type "char") (reparse-symbol arg-sub-list) [1167 1185])) :type "int") nil [1148 7854]))
+    :file "connect.cpp"
+    :pointmax 7855
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )

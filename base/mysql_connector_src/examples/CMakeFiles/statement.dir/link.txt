@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/statement.dir/statement.o  -o statement -rdynamic -L/usr/lib/mysql -L/home/zhaocong/Progamming/cgi-bin/mysql_connector_src/cppconn ../driver/libmysqlcppconn-static.a -lmysqlclient_r -Wl,-rpath,/usr/lib/mysql:/home/zhaocong/Progamming/cgi-bin/mysql_connector_src/cppconn 
