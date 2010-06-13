@@ -6,7 +6,7 @@
     :major-mode 'makefile-gmake-mode
     :tags '(("all" function (:arguments ("main.cpp")) nil [25 40]))
     :file "makefile"
-    :pointmax 258
+    :pointmax 269
     :unmatched-syntax 'nil
     )
    )
