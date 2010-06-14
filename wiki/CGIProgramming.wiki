@@ -1,8 +1,8 @@
-#summary One-sentence summary of this page.
+#summary Practice the C++ CGI Programming
 
 = Introduction =
 
-Add your content here.
+A very dummy C++ CGI programming project, purely for self-interest, initiated by the internship in PayPal and its monster-like C++ code base. 
 
 
 = Details =
