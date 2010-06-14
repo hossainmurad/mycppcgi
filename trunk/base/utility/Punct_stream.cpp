@@ -5,24 +5,16 @@
 // "Programming -- Principles and Practice Using C++" by Bjarne Stroustrup
 //
 
+Punct_stream::Punct_stream(string& s)
+  : base(s), sensitive(true){
+  base = s;
+  buffer.str(base);     // put string into stream  
+}
 
-Punct_stream& Punct_stream::operator>>(string& s)
-{
-  string line = base;
-  while (!(buffer>>s)){
-    if (buffer.bad())
-      return *this;
-    
-    buffer.clear();
-    // do character replacement as needed:
-    for (int i =0; i<line.size(); ++i)
-      if (is_whitespace(line[i]))
-	line[i]= ' ';
-      else if (!sensitive)
-	line[i] = tolower(line[i]);
-    
-    buffer.str(line);     // put string into stream
-  }
+
+
+Punct_stream& Punct_stream::operator>>(string& s){
+  buffer>>s;
   return *this;
 }
 
@@ -36,4 +28,8 @@ bool Punct_stream::is_whitespace(char c)
 
 //------------------------------------------------------------------------------
 
-
+Punct_stream::operator bool()
+{
+  //return !(buffer.fail() || buffer.bad()) && buffer.good();
+  return !(buffer.fail());
+}

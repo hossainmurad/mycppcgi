@@ -8,7 +8,7 @@
 #include "cgicc/HTMLClasses.h"
 #include "./db_connection/DBconnector.h"
 #include "./utility/Punct_stream.h"
-//#include "./utility/General.h"
+#include "./services/ServiceManager.h"
 
 
 using namespace cgicc;
@@ -35,18 +35,22 @@ int main(int argc, char **argv)
   const CgiEnvironment& env = cgi.getEnvironment();
 
   string pathInfo = env.getPathInfo();
-  string primary("");
+  string var("");
   string secondary("");
   //parse_path_info(pathInfo);
   Punct_stream ps(pathInfo);
-  stringstream ss(pathInfo);
   ps.whitespace("/");
-  ps>>primary;
-  ps>>secondary;
-  //ss>>primary;
-  //ss>>secondary;
-  cout<<"p:"<<primary<< endl;
-  cout<<"s:"<<secondary<< endl;
+   vector<string> vars;
+  while (ps>>var){
+    vars.push_back(var);
+  }
+
+  for (int i = 0; i < vars.size(); i++)
+    cout << vars[i];
+  
+  ServiceManager sm;
+  sm.ServiceParser(vars);
+  
 
   if (env.getRequestMethod() == POST_METHOD){
     cout << "POST";
